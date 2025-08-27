@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const API_URL = 'http://127.0.0.1:5000';
+    const API_URL = (typeof window !== 'undefined' && window.API_URL) ? window.API_URL : 'http://127.0.0.1:5000';
 
     const createGroupForm = document.getElementById('create-group-form');
     const addExpenseForm = document.getElementById('add-expense-form');

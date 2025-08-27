@@ -104,6 +104,55 @@ A free and open-source expense sharing application similar to Splitwise, built w
 6. **Access the application**
    Open your browser and navigate to `http://localhost:3000`
 
+## 🌐 GitHub Pages Deployment (Static Version)
+
+For a simplified static version that runs entirely in the browser without requiring a backend server, you can deploy this app to GitHub Pages. This version uses localStorage for data persistence.
+
+### Features in Static Version
+- ✅ Create and manage expense groups
+- ✅ Add and track expenses
+- ✅ Calculate balances and settlements
+- ✅ Data persistence using browser localStorage
+- ✅ No backend server required
+- ✅ Free hosting on GitHub Pages
+
+### Deploy to GitHub Pages
+
+1. **Fork this repository** to your GitHub account
+
+2. **Enable GitHub Pages**:
+   - Go to your fork's repository settings
+   - Navigate to "Pages" in the left sidebar
+   - Under "Source", select "GitHub Actions"
+
+3. **Push to trigger deployment**:
+   ```bash
+   git add .
+   git commit -m "Deploy to GitHub Pages"
+   git push origin main
+   ```
+
+4. **Access your deployed app**:
+   Your app will be available at: `https://yourusername.github.io/splitwise-clone/`
+
+### Manual Deployment
+If you prefer manual deployment:
+
+1. **Build the static files**:
+   ```bash
+   mkdir build
+   cp index.html style.css script.js build/
+   ```
+
+2. **Deploy the `build` folder** to any static hosting service (Netlify, Vercel, GitHub Pages, etc.)
+
+### Important Notes for Static Version
+- **Data Storage**: All data is stored in your browser's localStorage
+- **No Backend**: No server-side features (user authentication, email notifications, etc.)
+- **Browser Specific**: Data won't sync across different browsers or devices
+- **No Data Loss Protection**: Clear browser data = lose all expenses
+- **Perfect for**: Personal use, demos, small groups sharing one device
+
 ## 📱 Usage
 
 ### Getting Started
